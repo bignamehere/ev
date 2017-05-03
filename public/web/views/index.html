@@ -35,7 +35,7 @@
         <header>
             <nav class="navbar navbar-default">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="/">The Message: {{ mainVM.message }}</a>
+                    <a class="navbar-brand" href="/">The Message: {{ mainVM.bigMessage }}</a>
                 </div>
             
                 <ul class="nav navbar-nav navbar-right">
@@ -56,6 +56,11 @@
             
             
         </main>
+        
+        <div class="container">
+            <label>Message</label>
+            <input type="text" class="form-control" ng-model="mainVM.message">
+        </div>
         
         <div class="container">
             <div class="row">

@@ -54,6 +54,8 @@ module.exports = function (app, express) {
     });
 
     // middleware to use for all Requests
+    
+    
     apiRouter.use(function(req, res, next){
        // do logging
         console.log('Somebody just came to our API');
